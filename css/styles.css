@@ -247,6 +247,23 @@ html.lenis, html.lenis body {
                 0 0 30px rgba(229, 169, 60, 0.2);
 }
 
+/* Staggered Bento Grid — cards float at different vertical offsets */
+.bento-staggered-grid .bento-card {
+    opacity: 0;
+    transform: translateY(40px);
+}
+
+.bento-staggered-grid .bento-card.revealed {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+@media (max-width: 1023px) {
+    .bento-staggered-grid .bento-card {
+        margin-top: 0 !important;
+    }
+}
+
 /* ============================================================
    DESTINATION / PRICING CARDS
    ============================================================ */

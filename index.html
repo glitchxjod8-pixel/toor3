@@ -207,10 +207,13 @@
         </div>
     </div>
 
-    <!-- SECTION 2: EXPANDING MEDIA CARD -->
+    <!-- SECTION 2: EXPANDING VIDEO MEDIA FRAME -->
     <section id="heroMedia" class="expanding-media-section relative z-10 px-0 md:px-4 mb-20">
-        <div id="heroMediaCard" class="hero-media-card relative h-[50vh] min-h-[320px] md:h-[60vh] overflow-hidden shadow-glass group mx-auto">
-            <img src="https://images.pexels.com/photos/35775960/pexels-photo-35775960.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" alt="Murudeshwar coastal temple landscape" class="absolute inset-0 w-full h-full object-cover transition-transform duration-[1500ms] group-hover:scale-105" id="heroMediaImg">
+        <div id="heroMediaCard" class="hero-media-card relative h-[50vh] min-h-[320px] md:h-[65vh] overflow-hidden shadow-glass group mx-auto">
+            <video autoplay muted loop playsinline class="absolute inset-0 w-full h-full object-cover transition-transform duration-[1500ms] group-hover:scale-105" id="heroMediaVideo">
+                <source src="hero-video.mp4" type="video/mp4">
+                <source src="hero-video.mp4.mp4" type="video/mp4">
+            </video>
             <div class="absolute inset-0 bg-gradient-to-t from-forestObsidian via-forestObsidian/30 to-transparent"></div>
             <div class="absolute bottom-0 left-0 right-0 p-6 md:p-12 space-y-3 text-center md:text-left">
                 <span class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-gold/15 border border-gold/40 text-gold text-[11px] font-extrabold uppercase backdrop-blur-md">
@@ -235,12 +238,11 @@
             <p class="text-xs md:text-sm text-gray-400">Four signature experiences, each crafted with Volvo sleeper comfort and expert local guides.</p>
         </div>
 
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
-            <article class="bento-card group relative h-[360px] rounded-3xl overflow-hidden border border-gold/25 shadow-glass" data-reveal>
+        <div class="bento-staggered-grid grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 items-start">
+            <article class="bento-card group relative h-[380px] lg:mt-0 rounded-3xl overflow-hidden border border-gold/25 shadow-glass" data-reveal>
                 <img src="https://images.pexels.com/photos/6769121/pexels-photo-6769121.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" alt="Gokarna beach cliffs" class="absolute inset-0 w-full h-full object-cover transition-transform duration-[1200ms] group-hover:scale-110">
                 <div class="absolute inset-0 bg-gradient-to-t from-forestObsidian via-forestObsidian/40 to-transparent"></div>
-                <span class="absolute top-4 left-4 px-3 py-1 rounded-full bg-gold/15 border border-gold/40 text-gold text-[10px] font-extrabold uppercase backdrop-blur-md">Coastal</span>
-                <span class="absolute top-4 right-4 px-2.5 py-1 rounded-full bg-deepSlate/80 border border-gold/30 text-gold text-[10px] font-bold backdrop-blur-md">4.9 ★ (120+ trips)</span>
+                <span class="absolute top-4 left-4 px-3 py-1 rounded-full bg-gold/15 border border-gold/40 text-gold text-[10px] font-extrabold uppercase backdrop-blur-md">4.9 ★ Coastal</span>
                 <div class="absolute bottom-0 left-0 right-0 p-5 space-y-2">
                     <h3 class="font-serif text-xl md:text-2xl font-bold text-white">Coastal Retreats</h3>
                     <p class="text-[11px] text-gray-200 leading-relaxed">Gokarna & Murudeshwar beach cliffs, sunset cruises, and oceanfront resorts.</p>
@@ -248,38 +250,35 @@
                 </div>
             </article>
 
-            <article class="bento-card group relative h-[360px] rounded-3xl overflow-hidden border border-gold/25 shadow-glass" data-reveal>
-                <img src="https://images.pexels.com/photos/7542627/pexels-photo-7542627.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" alt="River rafting adventure" class="absolute inset-0 w-full h-full object-cover transition-transform duration-[1200ms] group-hover:scale-110">
+            <article class="bento-card group relative h-[340px] lg:mt-12 rounded-3xl overflow-hidden border border-gold/25 shadow-glass" data-reveal>
+                <img src="https://images.pexels.com/photos/7542627/pexels-photo-7542627.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" alt="Dandeli river rafting adventure" class="absolute inset-0 w-full h-full object-cover transition-transform duration-[1200ms] group-hover:scale-110">
                 <div class="absolute inset-0 bg-gradient-to-t from-forestObsidian via-forestObsidian/40 to-transparent"></div>
-                <span class="absolute top-4 left-4 px-3 py-1 rounded-full bg-cyanGlow/15 border border-cyanGlow/40 text-cyanGlow text-[10px] font-extrabold uppercase backdrop-blur-md">Adventure</span>
-                <span class="absolute top-4 right-4 px-2.5 py-1 rounded-full bg-deepSlate/80 border border-gold/30 text-gold text-[10px] font-bold backdrop-blur-md">4.8 ★</span>
+                <span class="absolute top-4 left-4 px-3 py-1 rounded-full bg-cyanGlow/15 border border-cyanGlow/40 text-cyanGlow text-[10px] font-extrabold uppercase backdrop-blur-md">4.8 ★ Adventure</span>
                 <div class="absolute bottom-0 left-0 right-0 p-5 space-y-2">
                     <h3 class="font-serif text-xl md:text-2xl font-bold text-white">Water Adventures</h3>
-                    <p class="text-[11px] text-gray-200 leading-relaxed">Kayaking, river rafting, and waterfall treks through the Western Ghats.</p>
+                    <p class="text-[11px] text-gray-200 leading-relaxed">Dandeli river rafting, kayaking, and waterfall treks through the Western Ghats.</p>
                     <button onclick="filterBentoCategory('all')" class="mt-1 px-3 py-1.5 rounded-lg bg-gold/20 border border-gold/40 text-gold font-bold text-[10px] hover:bg-gold hover:text-obsidian transition-all">Explore Route <i class="fa-solid fa-arrow-right text-[8px] ml-1"></i></button>
                 </div>
             </article>
 
-            <article class="bento-card group relative h-[360px] rounded-3xl overflow-hidden border border-gold/25 shadow-glass" data-reveal>
-                <img src="https://images.pexels.com/photos/31969428/pexels-photo-31969428.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" alt="Ancient temple architecture" class="absolute inset-0 w-full h-full object-cover transition-transform duration-[1200ms] group-hover:scale-110">
+            <article class="bento-card group relative h-[400px] lg:mt-4 rounded-3xl overflow-hidden border border-gold/25 shadow-glass" data-reveal>
+                <img src="https://images.pexels.com/photos/31969428/pexels-photo-31969428.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" alt="Sacred Murudeshwar temple architecture" class="absolute inset-0 w-full h-full object-cover transition-transform duration-[1200ms] group-hover:scale-110">
                 <div class="absolute inset-0 bg-gradient-to-t from-forestObsidian via-forestObsidian/40 to-transparent"></div>
-                <span class="absolute top-4 left-4 px-3 py-1 rounded-full bg-amber/15 border border-amber/40 text-amber text-[10px] font-extrabold uppercase backdrop-blur-md">Heritage</span>
-                <span class="absolute top-4 right-4 px-2.5 py-1 rounded-full bg-deepSlate/80 border border-gold/30 text-gold text-[10px] font-bold backdrop-blur-md">5.0 ★</span>
+                <span class="absolute top-4 left-4 px-3 py-1 rounded-full bg-amber/15 border border-amber/40 text-amber text-[10px] font-extrabold uppercase backdrop-blur-md">5.0 ★ Spiritual</span>
                 <div class="absolute bottom-0 left-0 right-0 p-5 space-y-2">
                     <h3 class="font-serif text-xl md:text-2xl font-bold text-white">Cultural Journeys</h3>
-                    <p class="text-[11px] text-gray-200 leading-relaxed">Ancient temple trails, heritage sites, and sacred pilgrimage circuits.</p>
+                    <p class="text-[11px] text-gray-200 leading-relaxed">Sacred Murudeshwar & Kukke temple trails, heritage sites, and pilgrimage circuits.</p>
                     <button onclick="filterBentoCategory('spiritual')" class="mt-1 px-3 py-1.5 rounded-lg bg-gold/20 border border-gold/40 text-gold font-bold text-[10px] hover:bg-gold hover:text-obsidian transition-all">Explore Route <i class="fa-solid fa-arrow-right text-[8px] ml-1"></i></button>
                 </div>
             </article>
 
-            <article class="bento-card group relative h-[360px] rounded-3xl overflow-hidden border border-gold/25 shadow-glass" data-reveal>
-                <img src="https://images.pexels.com/photos/37633371/pexels-photo-37633371.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" alt="Munnar tea plantation hills" class="absolute inset-0 w-full h-full object-cover transition-transform duration-[1200ms] group-hover:scale-110">
+            <article class="bento-card group relative h-[360px] lg:mt-16 rounded-3xl overflow-hidden border border-gold/25 shadow-glass" data-reveal>
+                <img src="https://images.pexels.com/photos/37633371/pexels-photo-37633371.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" alt="Coorg Chikmagalur misty hills" class="absolute inset-0 w-full h-full object-cover transition-transform duration-[1200ms] group-hover:scale-110">
                 <div class="absolute inset-0 bg-gradient-to-t from-forestObsidian via-forestObsidian/40 to-transparent"></div>
-                <span class="absolute top-4 left-4 px-3 py-1 rounded-full bg-leafGreen/20 border border-leafGreen/50 text-cyanGlow text-[10px] font-extrabold uppercase backdrop-blur-md">Mountains</span>
-                <span class="absolute top-4 right-4 px-2.5 py-1 rounded-full bg-deepSlate/80 border border-gold/30 text-gold text-[10px] font-bold backdrop-blur-md">4.9 ★</span>
+                <span class="absolute top-4 left-4 px-3 py-1 rounded-full bg-leafGreen/20 border border-leafGreen/50 text-cyanGlow text-[10px] font-extrabold uppercase backdrop-blur-md">4.9 ★ Hills</span>
                 <div class="absolute bottom-0 left-0 right-0 p-5 space-y-2">
                     <h3 class="font-serif text-xl md:text-2xl font-bold text-white">Mountain Escapes</h3>
-                    <p class="text-[11px] text-gray-200 leading-relaxed">Munnar, Coorg & Chikmagalur tea hills, misty plantations, and cool highlands.</p>
+                    <p class="text-[11px] text-gray-200 leading-relaxed">Coorg & Chikmagalur misty coffee hills, plantations, and cool highland retreats.</p>
                     <button onclick="filterBentoCategory('hill')" class="mt-1 px-3 py-1.5 rounded-lg bg-gold/20 border border-gold/40 text-gold font-bold text-[10px] hover:bg-gold hover:text-obsidian transition-all">Explore Route <i class="fa-solid fa-arrow-right text-[8px] ml-1"></i></button>
                 </div>
             </article>
