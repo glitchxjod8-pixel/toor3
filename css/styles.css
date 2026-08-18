@@ -1,12 +1,20 @@
 /* Custom Aesthetics & Styling System for Mantra Miles Tour */
 
-/* Refined Luxury Dark Obsidian Color Palette */
+/* Restored Dark Forest Charcoal Palette */
 :root {
-    --obsidian-black: #0a0c10;
-    --deep-slate: #11151c;
+    --obsidian-black: #070d0a;
+    --deep-slate: #0b140e;
     --metallic-gold: #e5a93c;
     --bright-emerald: #218359;
     --cyan-glow: #00F5D4;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    overflow-x: hidden;
 }
 
 /* Initial Hidden State for Timed 3-Second Delay Hero Overlay Text */
@@ -68,7 +76,7 @@ html.lenis, html.lenis body {
     width: 8px;
 }
 ::-webkit-scrollbar-track {
-    background: #0a0c10;
+    background: #070d0a;
 }
 ::-webkit-scrollbar-thumb {
     background: linear-gradient(to bottom, #e5a93c, #218359);
@@ -78,12 +86,12 @@ html.lenis, html.lenis body {
     background: #00F5D4;
 }
 
-/* Dark Obsidian Glassmorphism */
+/* Restored Ultra-Sleek Glassmorphism */
 .glass-panel {
-    background: rgba(17, 21, 28, 0.65);
-    backdrop-filter: blur(16px);
-    -webkit-backdrop-filter: blur(16px);
-    border: 1px solid rgba(229, 169, 60, 0.25);
+    background: rgba(255, 255, 255, 0.03);
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+    border: 1px solid rgba(229, 169, 60, 0.2);
     box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.6);
 }
 
@@ -191,9 +199,9 @@ html.lenis, html.lenis body {
 }
 
 .hero-media-card {
-    border-radius: 32px;
+    border-radius: 36px;
     border: 1px solid rgba(229, 169, 60, 0.3);
-    max-width: 55%;
+    max-width: 80%;
     margin-left: auto;
     margin-right: auto;
     transition: border-radius 0.8s cubic-bezier(0.22, 1, 0.36, 1),
@@ -205,8 +213,8 @@ html.lenis, html.lenis body {
 }
 
 .hero-media-card.expanded {
-    border-radius: 32px;
-    max-width: 100%;
+    border-radius: 36px;
+    max-width: 98%;
     border-color: rgba(229, 169, 60, 0.5);
     box-shadow: 0 20px 60px rgba(0, 0, 0, 0.6),
                 0 0 40px rgba(229, 169, 60, 0.25);
@@ -214,11 +222,11 @@ html.lenis, html.lenis body {
 
 @media (max-width: 640px) {
     .hero-media-card {
-        max-width: 85%;
+        max-width: 90%;
         border-radius: 24px;
     }
     .hero-media-card.expanded {
-        max-width: 100%;
+        max-width: 96%;
         border-radius: 24px;
     }
 }
@@ -233,7 +241,7 @@ html.lenis, html.lenis body {
 }
 
 .bento-card:hover {
-    transform: translateY(-8px);
+    transform: translateY(-6px) scale(1.02);
     border-color: rgba(229, 169, 60, 0.6);
     box-shadow: 0 20px 50px rgba(0, 0, 0, 0.55),
                 0 0 30px rgba(229, 169, 60, 0.2);
@@ -305,7 +313,7 @@ html.lenis, html.lenis body {
 }
 
 .adventure-card:hover {
-    transform: translateY(-6px);
+    transform: translateY(-6px) scale(1.02);
     border-color: rgba(229, 169, 60, 0.5);
     box-shadow: 0 15px 40px rgba(0, 0, 0, 0.5),
                 0 0 20px rgba(229, 169, 60, 0.15);
@@ -366,7 +374,7 @@ html.lenis, html.lenis body {
    ROUTE MAP
    ============================================================ */
 .route-map-container {
-    background: radial-gradient(ellipse at center, rgba(17, 21, 28, 0.8), rgba(10, 12, 16, 0.95));
+    background: radial-gradient(ellipse at center, rgba(11, 20, 14, 0.8), rgba(7, 13, 10, 0.95));
 }
 
 .route-line {
